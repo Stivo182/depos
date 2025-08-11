@@ -102,6 +102,7 @@
 	ТестовыеСлучаи = Новый Соответствие();
 	ТестовыеСлучаи.Вставить("autumn", "autumn");
 	ТестовыеСлучаи.Вставить("annotations,autumn, asserts", "annotations,autumn,asserts");
+	ТестовыеСлучаи.Вставить("annotations autumn  asserts ", "annotations,autumn,asserts");
 	ТестовыеСлучаи.Вставить("autumnnn", "");
 	ТестовыеСлучаи.Вставить("autu?n", "autumn");
 	ТестовыеСлучаи.Вставить("autu?", "");
