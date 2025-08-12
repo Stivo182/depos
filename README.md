@@ -11,7 +11,10 @@
 ### Проверка последних версий зависимостей проекта
 
 ```bash
-$ depos check
+depos check
+```
+
+```bash
 Проверка зависимостей в path/to/packagedef
 
  1connector         2.3.1 → 2.3.3
@@ -26,7 +29,10 @@ $ depos check
 > Убедитесь, что файл `packagedef` находится в системе контроля версий, и все изменения зафиксированы. Это действие перезапишет ваш файл.
 
 ```bash
-$ depos upgrade
+depos upgrade
+```
+
+```bash
 Обновление зависимостей в path/to/packagedef
 
  1connector         2.3.1 → 2.3.3
