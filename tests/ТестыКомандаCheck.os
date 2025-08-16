@@ -31,12 +31,12 @@
 
 	// Подготовка
 	ОжидаемыйВывод =
-	" annotations       1.3.0 → 1.3.1
-	| asserts           *     → 1.5.0
-	| autumn            3.2.0 → 4.3.11
-	| delegate          1.0.0 → 1.0.0
-	| packageinfo       0.7   → 0.8
-	| 1testrunner  dev  1.9.0 → 1.9.2";
+	"↑ annotations       1.3.0 → 1.3.1
+	|  asserts           *     → 1.5.0
+	|↑ autumn            3.2.0 → 4.3.11
+	|  delegate          1.0.0 → 1.0.0
+	|↑ packageinfo       0.7   → 0.8
+	|↑ 1testrunner  dev  1.9.0 → 1.9.2";
 
 	Поделка = Новый Поделка();
 	Поделка.ЗапуститьПриложение();
@@ -63,12 +63,12 @@
 
 	// Подготовка
 	ОжидаемыйВывод =
-	" annotations       1.3.0 → 1.3.1
-	| asserts           *     → 1.5.0
-	| autumn            3.2.0 → 4.3.11
-	| delegate          1.0.0 → 1.0.0
-	| packageinfo       0.7   → 0.8
-	| 1testrunner  dev  1.8.0 → 1.9.2";
+	"↑ annotations       1.3.0 → 1.3.1
+	|  asserts           *     → 1.5.0
+	|↑ autumn            3.2.0 → 4.3.11
+	|  delegate          1.0.0 → 1.0.0
+	|↑ packageinfo       0.7   → 0.8
+	|↑ 1testrunner  dev  1.8.0 → 1.9.2";
 
 	УстановитьТекущийКаталог("./tests/fixtures");
 
@@ -95,10 +95,10 @@
 
 	// Подготовка
 	ОжидаемыйВывод =
-	" annotations       1.3.0 → 1.3.1
-	| autumn            3.2.0 → 4.3.11
-	| packageinfo       0.7   → 0.8
-	| 1testrunner  dev  1.8.0 → 1.9.2";
+	"↑ annotations       1.3.0 → 1.3.1
+	|↑ autumn            3.2.0 → 4.3.11
+	|↑ packageinfo       0.7   → 0.8
+	|↑ 1testrunner  dev  1.8.0 → 1.9.2";
 
 	УстановитьТекущийКаталог("./tests/fixtures");
 
@@ -126,12 +126,12 @@
 
 	// Подготовка
 	ОжидаемыйВывод =
-	" annotations       1.3.0 → 1.3.1
-	| asserts           *     → 1.5.0
-	| autumn            3.2.0 → 4.3.11
-	| delegate          1.0.0 → 1.0.0
-	| packageinfo       0.7   → 0.8
-	| 1testrunner  dev  1.8.0 → 1.9.2";
+	"↑ annotations       1.3.0 → 1.3.1
+	|  asserts           *     → 1.5.0
+	|↑ autumn            3.2.0 → 4.3.11
+	|  delegate          1.0.0 → 1.0.0
+	|↑ packageinfo       0.7   → 0.8
+	|↑ 1testrunner  dev  1.8.0 → 1.9.2";
 
 	УстановитьТекущийКаталог("./tests/fixtures");
 
@@ -160,12 +160,12 @@
 
 	// Подготовка
 	ОжидаемыйВывод = 
-	" annotations       1.3.0 → 1.3.1
-	| asserts           *     → 1.5.0
-	| autumn            3.2.0 → 3.3.0
-	| delegate          1.0.0 → 1.0.0
-	| packageinfo       0.7   → 0.8
-	| 1testrunner  dev  1.8.0 → 1.9.2";
+	"↑ annotations       1.3.0 → 1.3.1
+	|  asserts           *     → 1.5.0
+	|↑ autumn            3.2.0 → 3.3.0
+	|  delegate          1.0.0 → 1.0.0
+	|↑ packageinfo       0.7   → 0.8
+	|↑ 1testrunner  dev  1.8.0 → 1.9.2";
 
 	УстановитьТекущийКаталог("./tests/fixtures");
 
@@ -194,12 +194,12 @@
 
 	// Подготовка
 	ОжидаемыйВывод = 
-	" annotations       1.3.0 → 1.3.1
-	| asserts           *     → 1.5.0
-	| autumn            3.2.0 → 3.2.0
-	| delegate          1.0.0 → 1.0.0
-	| packageinfo       0.7   → 0.7
-	| 1testrunner  dev  1.8.0 → 1.8.0";
+	"↑ annotations       1.3.0 → 1.3.1
+	|  asserts           *     → 1.5.0
+	|  autumn            3.2.0 → 3.2.0
+	|  delegate          1.0.0 → 1.0.0
+	|  packageinfo       0.7   → 0.7
+	|  1testrunner  dev  1.8.0 → 1.8.0";
 
 	УстановитьТекущийКаталог("./tests/fixtures");
 
@@ -228,9 +228,9 @@
 
 	// Подготовка
 	ОжидаемыйВывод = 
-	" annotations       1.3.0 → 1.3.1
-	| asserts           *     → 1.5.0
-	| autumn            3.2.0 → 4.3.11";
+	"↑ annotations       1.3.0 → 1.3.1
+	|  asserts           *     → 1.5.0
+	|↑ autumn            3.2.0 → 4.3.11";
 
 	УстановитьТекущийКаталог("./tests/fixtures");
 
