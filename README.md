@@ -20,10 +20,10 @@ depos check
 ```bash
 Проверка зависимостей в path/to/packagedef
 
- 1connector         2.3.1 → 2.3.3
- autumn             3.3.0 → 4.3.11
- autumn-cli         1.1.0 → 1.2.0
- semver             1.0.0 → 1.0.0
+ ↑ 1connector         2.3.1 → 2.3.3
+ ↑ autumn             3.3.0 → 4.3.11
+ ↑ autumn-cli         1.1.0 → 1.2.0
+   semver             1.0.0 → 1.0.0
 ```
 
 ### Обновление зависимостей
@@ -41,9 +41,9 @@ depos upgrade
 ```bash
 Обновление зависимостей в path/to/packagedef
 
- 1connector         2.3.1 → 2.3.3
- autumn             3.3.0 → 4.3.11
- autumn-cli         1.1.0 → 1.2.0
+ ✓ 1connector         2.3.1 → 2.3.3
+ ✓ autumn             3.3.0 → 4.3.11
+ ✓ autumn-cli         1.1.0 → 1.2.0
  
 Выполните opm install для установки новых версий пакетов.
 ```
