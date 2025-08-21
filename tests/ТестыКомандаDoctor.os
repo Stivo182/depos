@@ -125,22 +125,22 @@
 
 	// Подготовка
 	ОжидаемыйВывод = 
-	"❌ Отсутствующие пакеты в манифесте:
+	"Отсутствующие пакеты в манифесте:
 	|
-	|   • present_in_dev_src_tests
+	|   present_in_dev_src_tests
 	|     - %1\src\Классы\Класс1.os
-	|   • present_in_dev_src_missing_tests
+	|   present_in_dev_src_missing_tests
 	|     - %1\src\Классы\Класс1.os
-	|   • missing_manifests_present_src_tests
+	|   missing_manifests_present_src_tests
 	|     - %1\src\Классы\Класс1.os
 	|     - %1\src\Классы\Класс2.os
-	|   • missing_manifests_present_src
+	|   missing_manifests_present_src
 	|     - %1\src\Классы\Класс1.os
 	|
-	|⚠  Неиспользуемые пакеты в коде:
+	|Неиспользуемые пакеты в коде:
 	|
-	|   • present_in_prod_tests_missing_src
-	|   • present_in_prod_missing_src_tests
+	|   present_in_prod_tests_missing_src
+	|   present_in_prod_missing_src_tests
 	|
 	|Найдено проблем: 6";
 	ПодготовитьОжидаемыйВывод(ОжидаемыйВывод);
@@ -167,28 +167,28 @@
 Функция ОжидаемыйВыводРезультатаАнализа()
 	
 	ОжидаемыйВывод =
-	"❌ Отсутствующие пакеты в манифесте:
+	"Отсутствующие пакеты в манифесте:
 	|
-	|   • present_in_dev_src_tests
+	|   present_in_dev_src_tests
 	|     - %1\src\Классы\Класс1.os
-	|   • present_in_dev_src_missing_tests
+	|   present_in_dev_src_missing_tests
 	|     - %1\src\Классы\Класс1.os
-	|   • missing_manifests_present_src_tests
+	|   missing_manifests_present_src_tests
 	|     - %1\src\Классы\Класс1.os
 	|     - %1\src\Классы\Класс2.os
-	|   • missing_manifests_present_src
+	|   missing_manifests_present_src
 	|     - %1\src\Классы\Класс1.os
-	|   • missing_manifests_present_src_tests - dev
+	|   missing_manifests_present_src_tests (dev)
 	|     - %1\tests\Тесты.os
-	|   • missing_manifests_present_tests - dev
+	|   missing_manifests_present_tests (dev)
 	|     - %1\tests\Тесты.os
 	|
-	|⚠  Неиспользуемые пакеты в коде:
+	|Неиспользуемые пакеты в коде:
 	|
-	|   • present_in_prod_tests_missing_src
-	|   • present_in_prod_missing_src_tests
-	|   • present_in_dev_src_missing_tests - dev
-	|   • present_in_dev_missing_src_tests - dev
+	|   present_in_prod_tests_missing_src
+	|   present_in_prod_missing_src_tests
+	|   present_in_dev_src_missing_tests (dev)
+	|   present_in_dev_missing_src_tests (dev)
 	| 
 	|Найдено проблем: 10";
 
