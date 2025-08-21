@@ -1,0 +1,10 @@
+#Использовать present_in_prod_src_tests
+#Использовать present_in_prod_src_missing_tests
+#Использовать present_in_dev_src_tests
+#Использовать present_in_dev_src_missing_tests
+#Использовать missing_manifests_present_src_tests
+#Использовать missing_manifests_present_src
+
+Процедура ПриСозданииОбъекта()
+	
+КонецПроцедуры
