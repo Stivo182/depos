@@ -71,7 +71,7 @@ depos doctor
    asserts (dev)
      - path/to/tests/Тесты.os
 
-Неиспользуемые пакеты в коде
+Неиспользуемые пакеты в коде:
 
    cli
    1bdd (dev)
