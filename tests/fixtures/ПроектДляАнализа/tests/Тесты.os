@@ -1,0 +1,6 @@
+#Использовать present_in_prod_src_tests
+#Использовать present_in_prod_tests_missing_src
+#Использовать present_in_dev_src_tests
+#Использовать present_in_dev_tests_missing_src
+#Использовать missing_manifests_present_src_tests
+#Использовать missing_manifests_present_tests
