@@ -1,0 +1,12 @@
+{
+    "diagnostics": {
+        "parameters": {
+            "IncorrectLineBreak": {
+                "listOfIncorrectFirstSymbol": ";|,\\s*\\S+"
+            },
+            "Typo": {
+                "userWordsToIgnore": "Обновлятор,Парсинга,парсинге"
+            }
+        }
+    }
+}

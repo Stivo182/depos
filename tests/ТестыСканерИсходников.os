@@ -1,3 +1,7 @@
+// BSLLS:LineLength-off
+// BSLLS:MagicNumber-off
+// BSLLS:DuplicateStringLiteral-off
+
 #Использовать autumn
 #Использовать asserts
 #Использовать fs
