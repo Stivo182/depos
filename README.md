@@ -1,5 +1,10 @@
 # depos
 
+[![Release](https://img.shields.io/github/release/Stivo182/depos.svg)](https://github.com/Stivo182/depos/releases)
+[![Тестирование](https://github.com/Stivo182/depos/actions/workflows/test.yml/badge.svg)](https://github.com/Stivo182/depos/actions/workflows/test.yml)
+[![Статус порога качества](https://sonar.openbsl.ru/api/project_badges/measure?project=depos&metric=alert_status&token=sqb_eeb76aef6de0478eafe0a1a68037f51d59bf787f)](https://sonar.openbsl.ru/dashboard?id=depos)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **depos** - инструмент для анализа и обновления версий зависимостей пакетов OneScript в файле `packagedef`.
 
 - Модифицирует _только_ файл `packagedef`.
