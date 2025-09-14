@@ -64,13 +64,13 @@ depos check --deprecated
 
 # Фильтрация по именам пакетов
 depos check -f autumn,oint
-depos check -f "autumn oint"
+depos check -f 'autumn oint'
 
 # Фильтрация по шаблону
-depos check -f "autumn-*"
+depos check -f 'autumn-*'
 
 # Фильтрация по регулярному выражению
-depos check -f "/^autumn-(.*)$/"
+depos check -f '/^autumn-(.*)$/'
 ```
 
 **Пример вывода:**
@@ -120,13 +120,13 @@ depos upgrade --packagedef /path/to/project/packagedef
 depos upgrade --target patch
 
 # Фильтрация по именам пакетов
-depos upgrade -f "autumn,1connector"
+depos upgrade -f 'autumn,1connector'
 
 # Фильтрация по шаблону
-depos upgrade -f "autumn-*"
+depos upgrade -f 'autumn-*'
 
 # Фильтрация по регулярному выражению
-depos upgrade -f "/^autumn-(.*)$/"
+depos upgrade -f '/^autumn-(.*)$/'
 ```
 
 **Пример вывода:**
