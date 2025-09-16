@@ -70,7 +70,7 @@ depos check -f 'autumn oint'
 depos check -f 'autumn-*'
 
 # Фильтрация по регулярному выражению
-depos check -f '/^autumn-(.*)$/'
+depos check -f '/^autumn-.*$/'
 ```
 
 **Пример вывода:**
@@ -126,7 +126,7 @@ depos upgrade -f 'autumn,1connector'
 depos upgrade -f 'autumn-*'
 
 # Фильтрация по регулярному выражению
-depos upgrade -f '/^autumn-(.*)$/'
+depos upgrade -f '/^autumn-.*$/'
 ```
 
 **Пример вывода:**
