@@ -37,7 +37,7 @@ opm install
 
 **Синтаксис:**
 ```bash
-depos check [--packagedef <путь>] [-d|--deprecated] [-f|--filter <фильтр>] [-t|--target <тип>]
+depos check [--packagedef <путь>] [-d|--deprecated] [-f|--filter <фильтр>] [-t|--target <тип>] [-o|--output <файл>]
 ```
 
 | Опция | Описание |
@@ -57,7 +57,7 @@ depos check
 # Указание конкретного манифеста
 depos check --packagedef /path/to/my-project/packagedef
 
-# Проверка только до минорных весрий
+# Проверка только до минорных версий
 depos check --target minor
 
 # Показать только устаревшие пакеты
@@ -95,7 +95,7 @@ depos check -f '/^autumn-.*$/'
 
 **Синтаксис:**
 ```bash
-depos upgrade [--packagedef <путь>] [--backup] [-f|--filter <фильтр>] [-t|--target <тип>]
+depos upgrade [--packagedef <путь>] [--backup] [-f|--filter <фильтр>] [-t|--target <тип>] [-o|--output <файл>]
 ```
 
 | Опция | Описание |
