@@ -204,3 +204,30 @@ depos doctor --strict --ignore-dev
 
 Найдено проблем: 4
 ```
+
+## Github Action
+
+Workflow для автоматического обновления зависимостей пакетов OneScript с созданием Pull Request:
+
+```yaml
+name: Еженедельное обновление зависимостей
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Каждый понедельник
+  workflow_dispatch:
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Обновление зависимостей
+        uses: Stivo182/depos-action@v1
+        with:
+          filter: autumn-* # Обновлять только пакеты autumn
+          target: minor    # До минорных версий
+          message-prefix: build(deps)
+          token: ${{ secrets.PAT }}
+```
+
+Подробности и дополнительные параметры см. в [документации](https://github.com/Stivo182/depos-action).
