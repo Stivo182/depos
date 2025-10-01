@@ -226,7 +226,7 @@ depos doctor --strict --ignore-dev
 Workflow для автоматического обновления зависимостей пакетов OneScript с созданием Pull Request:
 
 ```yaml
-name: Еженедельное обновление зависимостей
+name: Обновление зависимостей
 
 on:
   schedule:
@@ -235,6 +235,7 @@ on:
 
 jobs:
   update-dependencies:
+    # if: github.repository_owner == '<your-username>'
     runs-on: ubuntu-latest
     steps:
       - name: Обновление зависимостей
