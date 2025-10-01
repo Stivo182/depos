@@ -12,7 +12,23 @@
 - Фильтрует пакеты по имени, шаблону или регулярному выражению.
 - Анализирует зависимости и выявляет потенциальные проблемы.
 
-## Быстрый старт 
+## Оглавление
+
+- [Установка](#installation)
+- [Быстрый старт](#quick-start)
+- [Команды](#check)
+  - [check](#check)
+  - [upgrade](#upgrade)
+  - [doctor](#doctor)
+- [GitHub Action](#github-action)
+
+## Установка <a name="installation"></a>
+
+```bsl
+opm install depos
+```
+
+## Быстрый старт <a name="quick-start"></a>
 
 ```bash
 # Перейти в каталог проекта
