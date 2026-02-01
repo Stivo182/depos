@@ -202,7 +202,7 @@ depos doctor
 depos doctor --manifest /path/to/project/packagedef
 
 # Конкретный пакет
-depos check --package autumn
+depos doctor --package autumn
 
 # Кастомные каталоги исходников
 depos doctor --src-dirs src,lib,modules
