@@ -205,20 +205,31 @@ depos doctor --strict --ignore-dev
 ```bash
 Диагностика зависимостей: path/to/packagedef
 
-Отсутствующие пакеты в манифесте:
+ОТСУТСТВУЮЩИЕ В МАНИФЕСТЕ:
 
    jason
-     - path/to/src/МойКласс1.os
-     - path/to/src/МойКласс2.os
+     ├─ path/to/src/МойКласс1.os
+     └─ path/to/src/МойКласс2.os
    asserts (dev)
-     - path/to/tests/Тесты.os
+     └─ path/to/tests/Тесты.os
 
-Неиспользуемые пакеты в коде:
+НЕИСПОЛЬЗУЕМЫЕ В КОДЕ
 
    cli
    1bdd (dev)
 
-Найдено проблем: 4
+НЕ УСТАНОВЛЕНЫ
+
+  1connector
+
+НЕСООТВЕТСТВИЕ ВЕРСИЙ
+
+ Пакет         Установленная  Требуемая  Источник
+----------------------------------------------------------------
+ autumn        3.3.0          >=4.3.0    path/to/lib/autumn
+ asserts  dev  1.5.0          >=1.6.0    path/to/additional_lib/asserts
+ 
+Найдено проблем: 7
 ```
 
 ## Github Action
