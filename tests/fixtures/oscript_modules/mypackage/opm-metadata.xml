@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+    <name>mypackage</name>
+    <version>1.0.0</version>
+    <author>Имя Фамилия</author>
+    <description>Описание пакета</description>
+    <engine-version>1.9.3</engine-version>
+    <depends-on name="delegate" dev="false" version="1.0.0"/>
+    <depends-on name="annotations" dev="false" version="1.3.0"/>
+    <depends-on name="asserts" dev="false"/>
+    <depends-on name="packageinfo" dev="false" version="0.7"/>
+    <depends-on name="autumn" dev="false" version="3.2.0" version-max="4.4.1"/>
+    <depends-on name="1testrunner" dev="true" version="1.8.0"/>
+    <depends-on name="semver" dev="false" version="1.0.0" version-max="1.1.0"/>
+</opm-metadata>
