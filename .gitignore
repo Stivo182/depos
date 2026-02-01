@@ -1,6 +1,6 @@
 # OneScript
 out/
-oscript_modules/
+/oscript_modules/
 *.ospx
 
 # VS Code
