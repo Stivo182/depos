@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+    <name>mypackage</name>
+    <version>1.0.0</version>
+    <author>Имя Фамилия</author>
+    <description>Описание пакета</description>
+</opm-metadata>
