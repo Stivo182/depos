@@ -205,7 +205,7 @@ depos doctor --strict --ignore-dev
 ```bash
 Диагностика зависимостей: path/to/packagedef
 
-ОТСУТСТВУЮЩИЕ В МАНИФЕСТЕ:
+ОТСУТСТВУЮЩИЕ В МАНИФЕСТЕ
 
    jason
      ├─ path/to/src/МойКласс1.os
