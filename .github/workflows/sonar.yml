@@ -11,5 +11,6 @@ jobs:
     uses: autumn-library/workflows/.github/workflows/sonar.yml@v1
     with:
       github_repository: Stivo182/depos
+      locale: "en_US"
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
