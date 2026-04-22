@@ -140,20 +140,20 @@
 	ОжидаемыйВывод1 = 
 	"ОТСУТСТВУЮЩИЕ В МАНИФЕСТЕ
 	|
-	|   present_in_dev_src_tests
-	|      └─ %1\src\Классы\Класс1.os
-	|   present_in_dev_src_missing_tests
+	|   missing_manifests_present_src
 	|      └─ %1\src\Классы\Класс1.os
 	|   missing_manifests_present_src_tests
 	|      ├─ %1\src\Классы\Класс1.os
 	|      └─ %1\src\Классы\Класс2.os
-	|   missing_manifests_present_src
+	|   present_in_dev_src_missing_tests
+	|      └─ %1\src\Классы\Класс1.os
+	|   present_in_dev_src_tests
 	|      └─ %1\src\Классы\Класс1.os
 	|
 	|НЕИСПОЛЬЗУЕМЫЕ В КОДЕ
 	|
-	|   present_in_prod_tests_missing_src
 	|   present_in_prod_missing_src_tests
+	|   present_in_prod_tests_missing_src
 	|
 	|НЕ УСТАНОВЛЕНЫ
 	|
@@ -269,36 +269,36 @@
 	ОжидаемыйВывод.Часть1 = 
 	"ОТСУТСТВУЮЩИЕ В МАНИФЕСТЕ
 	|
-	|   present_in_dev_src_tests
-	|      └─ %1\src\Классы\Класс1.os
-	|   present_in_dev_src_missing_tests
+	|   missing_manifests_present_src
 	|      └─ %1\src\Классы\Класс1.os
 	|   missing_manifests_present_src_tests
 	|      ├─ %1\src\Классы\Класс1.os
 	|      └─ %1\src\Классы\Класс2.os
-	|   missing_manifests_present_src
-	|      └─ %1\src\Классы\Класс1.os
 	|   missing_manifests_present_src_tests (dev)
 	|      └─ %1\tests\Тесты.os
 	|   missing_manifests_present_tests (dev)
 	|      └─ %1\tests\Тесты.os
+	|   present_in_dev_src_missing_tests
+	|      └─ %1\src\Классы\Класс1.os
+	|   present_in_dev_src_tests
+	|      └─ %1\src\Классы\Класс1.os
 	|
 	|НЕИСПОЛЬЗУЕМЫЕ В КОДЕ
 	|
-	|   present_in_prod_tests_missing_src
-	|   present_in_prod_missing_src_tests
-	|   present_in_dev_src_missing_tests (dev)
 	|   present_in_dev_missing_src_tests (dev)
+	|   present_in_dev_src_missing_tests (dev)
+	|   present_in_prod_missing_src_tests
+	|   present_in_prod_tests_missing_src
 	|
 	|НЕ УСТАНОВЛЕНЫ
 	|
- 	|  present_in_prod_missing_src_tests
+ 	|  present_in_dev_missing_src_tests (dev)
  	|  present_in_dev_tests_missing_src (dev)
- 	|  present_in_dev_missing_src_tests (dev)";
+ 	|  present_in_prod_missing_src_tests";
 
 	ОжидаемыйВывод.Часть2 = 
-	" present_in_prod_tests_missing_src       1.0.0          >=1.1.0          %1\oscript_modules\present_in_prod_tests_missing_src
- 	| present_in_dev_src_tests           dev  1.0.0          >=0.1.0,<=0.9.0  %1\oscript_modules\present_in_dev_src_tests";
+	" present_in_dev_src_tests           dev  1.0.0          >=0.1.0,<=0.9.0  %1\oscript_modules\present_in_dev_src_tests
+	| present_in_prod_tests_missing_src       1.0.0          >=1.1.0          %1\oscript_modules\present_in_prod_tests_missing_src";
 
 	ОжидаемыйВывод.Часть3 = 
 	"Найдено проблем: 15";
