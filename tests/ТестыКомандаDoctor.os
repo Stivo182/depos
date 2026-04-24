@@ -21,6 +21,7 @@
 &После
 Процедура ПослеКаждого() Экспорт
 	ПомощникТестирования.ВернутьПотокВывода();
+	ПомощникТестирования.УдалитьВременныеФайлы();
 	УстановитьТекущийКаталог(ТекущийКаталог);
 КонецПроцедуры
 
@@ -139,20 +140,20 @@
 	ОжидаемыйВывод1 = 
 	"ОТСУТСТВУЮЩИЕ В МАНИФЕСТЕ
 	|
-	|   present_in_dev_src_tests
-	|      └─ %1\src\Классы\Класс1.os
-	|   present_in_dev_src_missing_tests
+	|   missing_manifests_present_src
 	|      └─ %1\src\Классы\Класс1.os
 	|   missing_manifests_present_src_tests
 	|      ├─ %1\src\Классы\Класс1.os
 	|      └─ %1\src\Классы\Класс2.os
-	|   missing_manifests_present_src
+	|   present_in_dev_src_missing_tests
+	|      └─ %1\src\Классы\Класс1.os
+	|   present_in_dev_src_tests
 	|      └─ %1\src\Классы\Класс1.os
 	|
 	|НЕИСПОЛЬЗУЕМЫЕ В КОДЕ
 	|
-	|   present_in_prod_tests_missing_src
 	|   present_in_prod_missing_src_tests
+	|   present_in_prod_tests_missing_src
 	|
 	|НЕ УСТАНОВЛЕНЫ
 	|
@@ -235,6 +236,32 @@
 
 КонецПроцедуры
 
+&Тест
+Процедура ТестДолжен_ИсключитьПакетыИзАнализаПоФильтру() Экспорт
+
+	// Подготовка
+	Поделка = ПомощникТестирования.ОтладочнаяПоделка();
+	КонсольноеПриложение = Поделка.НайтиЖелудь("КонсольноеПриложение");
+
+	ПараметрыКоманды = Новый Массив();
+	ПараметрыКоманды.Добавить("doctor");
+	ПараметрыКоманды.Добавить("--manifest");
+	ПараметрыКоманды.Добавить("./tests/fixtures/ПроектДляАнализа/packagedef");
+	ПараметрыКоманды.Добавить("-x");
+	ПараметрыКоманды.Добавить("present_in_dev_src_tests");
+
+	// Действие
+	КонсольноеПриложение.Запустить(ПараметрыКоманды);
+
+	// Утверждение
+	ТекстВывода = ПомощникТестирования.ПолучитьТекстИзПотокаВывода(ПотокВывода);
+
+	Ожидаем.Что(ТекстВывода).Не_().Содержит("present_in_dev_src_tests");
+	Ожидаем.Что(ТекстВывода).Содержит("present_in_prod_tests_missing_src");
+	Ожидаем.Что(ТекстВывода).Содержит("Найдено проблем: 13");
+
+КонецПроцедуры
+
 Функция ОжидаемыйВыводРезультатаАнализа()
 	
 	ОжидаемыйВывод = Новый Структура("Часть1, Часть2, Часть3");
@@ -242,36 +269,36 @@
 	ОжидаемыйВывод.Часть1 = 
 	"ОТСУТСТВУЮЩИЕ В МАНИФЕСТЕ
 	|
-	|   present_in_dev_src_tests
-	|      └─ %1\src\Классы\Класс1.os
-	|   present_in_dev_src_missing_tests
+	|   missing_manifests_present_src
 	|      └─ %1\src\Классы\Класс1.os
 	|   missing_manifests_present_src_tests
 	|      ├─ %1\src\Классы\Класс1.os
 	|      └─ %1\src\Классы\Класс2.os
-	|   missing_manifests_present_src
-	|      └─ %1\src\Классы\Класс1.os
 	|   missing_manifests_present_src_tests (dev)
 	|      └─ %1\tests\Тесты.os
 	|   missing_manifests_present_tests (dev)
 	|      └─ %1\tests\Тесты.os
+	|   present_in_dev_src_missing_tests
+	|      └─ %1\src\Классы\Класс1.os
+	|   present_in_dev_src_tests
+	|      └─ %1\src\Классы\Класс1.os
 	|
 	|НЕИСПОЛЬЗУЕМЫЕ В КОДЕ
 	|
-	|   present_in_prod_tests_missing_src
-	|   present_in_prod_missing_src_tests
-	|   present_in_dev_src_missing_tests (dev)
 	|   present_in_dev_missing_src_tests (dev)
+	|   present_in_dev_src_missing_tests (dev)
+	|   present_in_prod_missing_src_tests
+	|   present_in_prod_tests_missing_src
 	|
 	|НЕ УСТАНОВЛЕНЫ
 	|
- 	|  present_in_prod_missing_src_tests
+ 	|  present_in_dev_missing_src_tests (dev)
  	|  present_in_dev_tests_missing_src (dev)
- 	|  present_in_dev_missing_src_tests (dev)";
+ 	|  present_in_prod_missing_src_tests";
 
 	ОжидаемыйВывод.Часть2 = 
-	" present_in_prod_tests_missing_src       1.0.0          >=1.1.0          %1\oscript_modules\present_in_prod_tests_missing_src
- 	| present_in_dev_src_tests           dev  1.0.0          >=0.1.0,<=0.9.0  %1\oscript_modules\present_in_dev_src_tests";
+	" present_in_dev_src_tests           dev  1.0.0          >=0.1.0,<=0.9.0  %1\oscript_modules\present_in_dev_src_tests
+	| present_in_prod_tests_missing_src       1.0.0          >=1.1.0          %1\oscript_modules\present_in_prod_tests_missing_src";
 
 	ОжидаемыйВывод.Часть3 = 
 	"Найдено проблем: 15";
