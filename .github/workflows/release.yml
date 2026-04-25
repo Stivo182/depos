@@ -11,6 +11,5 @@ jobs:
     uses: autumn-library/workflows/.github/workflows/release.yml@v1
     with:
       package_mask: "depos-*.ospx"
-      locale: "en_US"
     secrets:
       PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
