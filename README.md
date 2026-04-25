@@ -11,7 +11,7 @@
 - Обновляет версии зависимостей в `packagedef` до _последней_, _минорной_ или _патч_-версии.
 - Фильтрует пакеты по имени, шаблону или регулярному выражению.
 - Выявляет отсутствующие, неиспользуемые и неустановленные зависимости.
-- Обнаруживает конфликты версий установленных пакетов.
+- Обнаруживает конфликты версий установленных пакетов и транзитивных зависимостей.
 
 > [!IMPORTANT]
 > **depos** не является пакетным менеджером и не устанавливает пакеты. Для установки используйте `opm install` после обновления манифеста.
@@ -24,7 +24,7 @@
   - [check](#check)
   - [upgrade](#upgrade)
   - [doctor](#doctor)
-  - [Github Action](#github-action)
+  - [GitHub Action](#github-action)
 
 ## Установка <a name="installation"></a>
 
@@ -57,8 +57,9 @@ opm install
 
 **Синтаксис:**
 ```bash
-depos check [-m|--manifest ] [-p|--package ] [-d|--deprecated] 
-            [-f|--filter ] [-x|--exclude ] [-t|--target ] [-o|--output ]
+depos check [-m|--manifest <путь>] [-p|--package <имя>] [-d|--deprecated]
+            [-f|--filter <фильтр>] [-x|--exclude <фильтр>]
+            [-t|--target <тип>] [-o|--output <файл>]
 ```
 
 | Опция | Описание |
@@ -124,8 +125,9 @@ depos check -x 'autumn-*'
 
 **Синтаксис:**
 ```bash
-depos upgrade [-m|--manifest ] [--backup] [-f|--filter ] 
-              [-x|--exclude ] [-t|--target ] [-o|--output ]
+depos upgrade [-m|--manifest <путь>] [--backup]
+              [-f|--filter <фильтр>] [-x|--exclude <фильтр>]
+              [-t|--target <тип>] [-o|--output <файл>]
 ```
 
 | Опция | Описание |
@@ -187,9 +189,9 @@ depos upgrade -x 'autumn-*'
 
 **Синтаксис:**
 ```bash
-depos doctor [-m|--manifest ] [-p|--package ] 
-           [--src-dirs ] [--dev-dirs ] [-x|--exclude ]
-           [--ignore-dev] [--strict]
+depos doctor [-m|--manifest <путь>] [-p|--package <имя>]
+             [--src-dirs <каталоги>] [--dev-dirs <каталоги>]
+             [-x|--exclude <фильтр>] [--ignore-dev] [--strict]
 ```
 
 | Опция | Описание |
@@ -276,7 +278,7 @@ depos doctor --strict
      установлена: 0.9.0
      требуется:   >=0.9.1
      источник:    autumn
-     цепочка:     autumn -> configord
+     цепочка:     autumn -> configor
 
    collectionos
      причина:     несовместимые требования
@@ -296,7 +298,7 @@ depos doctor --strict
 Обнаружены проблемы с зависимостями.
 ```
 
-## Github Action
+## GitHub Action
 
 Автоматизация обновления зависимостей с созданием Pull Request:
 
