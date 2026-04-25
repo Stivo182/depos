@@ -1,0 +1,4 @@
+Описание.Имя("transitive-duplicate-dev-conflict")
+	.Версия("1.0.0")
+	.ЗависитОт("duplicate_parent", "1.0.0")
+	.РазработкаЗависитОт("duplicate_dev_root", "1.0.0");
