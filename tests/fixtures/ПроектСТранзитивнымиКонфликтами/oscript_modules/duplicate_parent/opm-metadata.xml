@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+	<name>duplicate_parent</name>
+	<version>1.0.0</version>
+	<depends-on name="duplicate_leaf" dev="true" version="2.0.0"/>
+</opm-metadata>
+
