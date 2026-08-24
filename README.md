@@ -27,6 +27,8 @@
 
 ## Установка <a name="installation"></a>
 
+Для работы требуется OneScript 2.0.0 или новее.
+
 ```bsl
 opm install depos
 ```
