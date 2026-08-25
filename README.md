@@ -28,6 +28,7 @@
 ## Установка <a name="installation"></a>
 
 Для работы требуется OneScript 2.0.0 или новее.
+Версия OneScript 1.9.3 поддерживалась до depos 0.4.0 включительно.
 
 ```bsl
 opm install depos
