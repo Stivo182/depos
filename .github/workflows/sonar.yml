@@ -12,5 +12,6 @@ jobs:
     with:
       github_repository: Stivo182/depos
       locale: "en_US"
+      test_engine: oneunit
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
