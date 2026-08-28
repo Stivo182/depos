@@ -1,0 +1,6 @@
+Описание.Имя("broken-packages")
+	.Версия("1.0.0")
+	.ЗависитОт("missing-metadata", "1.0.0")
+	.ЗависитОт("empty-version", "1.0.0")
+	.ЗависитОт("invalid-version", "1.0.0")
+	.ЗависитОт("invalid-xml", "1.0.0");

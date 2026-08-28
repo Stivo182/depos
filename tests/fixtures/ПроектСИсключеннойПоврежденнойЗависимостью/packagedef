@@ -1,0 +1,3 @@
+Описание.Имя("excluded-broken-dependency")
+	.Версия("1.0.0")
+	.ЗависитОт("broken-root", "1.0.0");
