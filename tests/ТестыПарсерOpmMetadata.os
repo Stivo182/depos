@@ -221,7 +221,7 @@
 Процедура ТестДолжен_ВернутьЕдинственнуюЗависимостьИзКорняБезПространстваИмен() Экспорт
 
 	// Подготовка
-	ПутьКФайлу = "./tests/fixtures/opm-metadata-one-dependency-without-attributes.xml";
+	ПутьКФайлу = "./tests/fixtures/opm-metadata-one-dependency-without-namespace.xml";
 
 	// Действие
 	Результат = Новый ПарсерOpmMetadata().Разобрать(ПутьКФайлу).Зависимости;

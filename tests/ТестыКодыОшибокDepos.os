@@ -9,6 +9,7 @@
 &ИсточникЗначение("ФорматВыводаНеПоддерживается", "output.format_not_supported")
 &ИсточникЗначение("ХостыРеестраНеНастроены", "registry.hosts_not_configured")
 &ИсточникЗначение("РеестрНедоступен", "registry.unavailable")
+&ИсточникЗначение("НастройкаРеестраНекорректна", "registry.settings_invalid")
 &ИсточникЗначение("ВерсииПакетаНедоступны", "package.versions_unavailable")
 &ИсточникЗначение("ВерсияПакетаНекорректна", "package.version_invalid")
 &ИсточникЗначение("ЧтениеМанифестаНеУдалось", "manifest.read_failed")
