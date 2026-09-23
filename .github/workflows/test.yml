@@ -16,3 +16,4 @@ jobs:
       oscript_version: ${{ matrix.oscript_version }}
       locale: "en_US"
       test_engine: oneunit
+      build_package: true
