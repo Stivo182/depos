@@ -1,0 +1,36 @@
+diff --git a/oscript_modules/oscript-yaml/src/internal/Модули/Десериализатор.os b/oscript_modules/oscript-yaml/src/internal/Модули/ДесериализаторYaml.os
+similarity index 100%
+rename from oscript_modules/oscript-yaml/src/internal/Модули/Десериализатор.os
+rename to oscript_modules/oscript-yaml/src/internal/Модули/ДесериализаторYaml.os
+diff --git a/oscript_modules/oscript-yaml/src/internal/Модули/Сериализатор.os b/oscript_modules/oscript-yaml/src/internal/Модули/СериализаторYaml.os
+similarity index 100%
+rename from oscript_modules/oscript-yaml/src/internal/Модули/Сериализатор.os
+rename to oscript_modules/oscript-yaml/src/internal/Модули/СериализаторYaml.os
+diff --git a/oscript_modules/oscript-yaml/src/Классы/ПарсерYaml.os b/oscript_modules/oscript-yaml/src/Классы/ПарсерYaml.os
+--- a/oscript_modules/oscript-yaml/src/Классы/ПарсерYaml.os
++++ b/oscript_modules/oscript-yaml/src/Классы/ПарсерYaml.os
+@@ -13,6 +13,6 @@
+ //
+ Функция ПрочитатьYaml(СтрокаYaml = "") Экспорт
+-	МассивДокументов = Десериализатор.Прочитать(СтрокаYaml);
++	МассивДокументов = ДесериализаторYaml.Прочитать(СтрокаYaml);
+ 	Если МассивДокументов.Количество() = 0 Тогда
+ 		Возврат Неопределено; // Если нет документов, возвращаем Неопределено
+ 	ИначеЕсли МассивДокументов.Количество() = 1 Тогда
+@@ -54,7 +54,7 @@
+ //
+ Функция ЗаписатьYaml(Знач Значение) Экспорт
+ 	
+-	Возврат Сериализатор.Сериализовать(Значение);
++	Возврат СериализаторYaml.Сериализовать(Значение);
+ 
+ КонецФункции
+ 
+@@ -82,6 +82,6 @@
+ //
+ Функция ЗаписатьДокументыYaml(Знач Документы) Экспорт
+ 	
+-	Возврат Сериализатор.СериализоватьДокументы(Документы);
++	Возврат СериализаторYaml.СериализоватьДокументы(Документы);
+ 
+ КонецФункции
