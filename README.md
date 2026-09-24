@@ -324,9 +324,13 @@ depos doctor --strict
 Опции `--registry` и `--registry-proxy` имеют наивысший приоритет. В `--registry` можно указать адрес реестра или
 имя сервера из `opm.cfg`.
 
-Если серверы не настроены, используются реестры из настроек `depos.registry.primary` и
-`depos.registry.fallback`. Их можно переопределить переменными `DEPOS_REGISTRY_PRIMARY` и
-`DEPOS_REGISTRY_FALLBACK` или в файле autumn-properties.json.
+Настройки можно задать в `autumn-properties.json` или соответствующими переменными среды.
+
+| Настройка | Переменная среды | По умолчанию | Описание |
+| --- | --- | --- | --- |
+| `depos.registry.primary` | `DEPOS_REGISTRY_PRIMARY` | `https://hub.oscript.io` | Основной реестр, если серверы из `opm.cfg` не настроены. |
+| `depos.registry.fallback` | `DEPOS_REGISTRY_FALLBACK` | `http://hub.oscript.ru` | Резервный реестр, если серверы из `opm.cfg` не настроены. |
+| `depos.registry.default-pool` | `DEPOS_REGISTRY_DEFAULT_POOL` | `default` | Пул OpenHub, проверяемый после всех указанных пулов. |
 
 ## GitHub Action
 
