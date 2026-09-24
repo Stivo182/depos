@@ -326,7 +326,8 @@ depos doctor --strict
 Если подходящих серверов нет, используются основной и резервный реестры depos.
 
 `opm.cfg` ищется в порядке OPM: в текущем каталоге, профиле пользователя, системном каталоге и рядом со стартовым
-сценарием. Читается первый найденный файл. Настройки proxy берутся из него; опция `--registry-proxy` имеет приоритет.
+сценарием. Читается первый найденный файл. Приоритет источников proxy: `--registry-proxy`, затем
+`depos.registry.proxy` (`DEPOS_REGISTRY_PROXY`), затем `opm.cfg`.
 
 ### Пулы OpenHub
 
@@ -345,6 +346,7 @@ OpenHub.
 | --- | --- | --- | --- |
 | `depos.registry.primary` | `DEPOS_REGISTRY_PRIMARY` | `https://hub.oscript.io` | Основной реестр. |
 | `depos.registry.fallback` | `DEPOS_REGISTRY_FALLBACK` | `http://hub.oscript.ru` | Резервный реестр. |
+| `depos.registry.proxy` | `DEPOS_REGISTRY_PROXY` | `""` | Прокси для запросов к реестру. |
 | `depos.registry.default-pool` | `DEPOS_REGISTRY_DEFAULT_POOL` | `default` | Пул OpenHub по умолчанию. |
 
 ## GitHub Action
