@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata>
+    <name>fourpart</name>
+    <version>1.2.3.4</version>
+    <depends-on name="dependency" version="2.3.4.5" version-max="3.4.5.6"/>
+</opm-metadata>
