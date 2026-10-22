@@ -28,12 +28,14 @@
 
 ## Установка <a name="installation"></a>
 
-Для работы требуется OneScript 2.1.0 или новее.
+Для работы требуется OneScript 2.2.0 или новее.
 Версия OneScript 1.9.3 поддерживалась до depos 0.4.0 включительно.
 
 ```bsl
 opm install depos
 ```
+
+Если приложение будет использоваться как CLI, установите его с флагом `-s`.
 
 ## Быстрый старт <a name="quick-start"></a>
 
@@ -77,6 +79,10 @@ depos check [-m|--manifest <путь>] [-p|--package <имя>] [-d|--deprecated]
 | -o, --output <файл> | Экспорт результатов проверки в JSON-файл. |
 | --registry <адрес или имя> | Адрес реестра или имя сервера из `opm.cfg`. |
 | --registry-proxy <URL> | Адрес HTTP proxy для запросов к реестру. |
+
+> [!NOTE]
+> depos поддерживает SemVer, включая пререлизы и метаданные сборки, а также четырёхкомпонентные версии `A.B.C.D`.
+> В этом формате `A.B` образуют мажорную версию, `C` является минорной, а `D` — патчем.
 
 **Примеры использования:**
 
@@ -347,6 +353,7 @@ OpenHub.
 | `depos.registry.primary` | `DEPOS_REGISTRY_PRIMARY` | `https://hub.oscript.io` | Основной реестр. |
 | `depos.registry.fallback` | `DEPOS_REGISTRY_FALLBACK` | `http://hub.oscript.ru` | Резервный реестр. |
 | `depos.registry.proxy` | `DEPOS_REGISTRY_PROXY` | `""` | Прокси для запросов к реестру. |
+| `depos.registry.timeout` | `DEPOS_REGISTRY_TIMEOUT` | `5` | Таймаут соединения и запроса, сек. |
 | `depos.registry.default-pool` | `DEPOS_REGISTRY_DEFAULT_POOL` | `default` | Пул OpenHub по умолчанию. |
 
 ## GitHub Action
