@@ -1,0 +1,4 @@
+Описание.Имя("version-recommendations")
+	.Версия("1.0.0")
+	.ЗависитОт("source_equal", "1.0.0")
+	.ЗависитОт("candidate", "5.4.0.3")

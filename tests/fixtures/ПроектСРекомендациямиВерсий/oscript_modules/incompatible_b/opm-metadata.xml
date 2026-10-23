@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+	<name>incompatible_b</name>
+	<version>1.0.0</version>
+	<depends-on name="candidate" dev="false" version-max="5.0.0"/>
+</opm-metadata>
