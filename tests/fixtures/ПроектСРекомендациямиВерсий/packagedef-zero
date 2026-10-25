@@ -1,0 +1,5 @@
+Описание.Имя("version-recommendations-zero")
+	.Версия("1.0.0")
+	.ЗависитОт("source_zero", "1.0.0")
+	.ЗависитОт("source_unversioned", "1.0.0")
+	.ЗависитОт("candidate", "0.0.0")
