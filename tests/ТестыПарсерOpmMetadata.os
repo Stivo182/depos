@@ -1,7 +1,7 @@
 // BSLLS:DuplicateStringLiteral-off
 
 #Использовать "helpers"
-#Использовать "../src/internal"
+#Использовать "../src/packages"
 
 #Область Тесты
 
