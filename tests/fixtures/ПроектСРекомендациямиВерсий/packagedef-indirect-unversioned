@@ -1,0 +1,4 @@
+Описание.Имя("indirect-unversioned")
+	.Версия("1.0.0")
+	.ЗависитОт("source_equal", "1.0.0")
+	.ЗависитОт("candidate"); // transitive
