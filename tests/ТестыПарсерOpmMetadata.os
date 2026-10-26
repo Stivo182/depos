@@ -132,11 +132,11 @@
 &ПараметризованныйТест
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-invalid-package-version.xml",
-	"package.version_invalid"
+	"depos.package.version_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-structured-package-version.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 Процедура ТестДолжен_ВернутьОшибкуПриНекорректнойВерсииПакета(ПутьКФайлу, КодОшибки) Экспорт
 
@@ -158,7 +158,7 @@
 
 	// Действие
 	Ошибка = ПолучитьОшибкуРазбора(ПутьКФайлу);
-	КадрОшибки = ДиагностикаОшибок.НайтиПервую(Ошибка, "package.version_invalid");
+	КадрОшибки = ДиагностикаОшибок.НайтиПервую(Ошибка, "depos.package.version_invalid");
 	ДанныеОшибки = КадрОшибки.Данные();
 	Версия = Неопределено;
 	ЕстьВерсия = ДанныеОшибки.Свойство("Версия", Версия);
@@ -179,50 +179,50 @@
 	Ошибка = ПолучитьОшибкуРазбора(ПутьКФайлу);
 
 	// Проверка
-	ПроверитьОшибкуМанифеста(Ошибка, "manifest.parse_failed", ПутьКФайлу);
+	ПроверитьОшибкуМанифеста(Ошибка, "depos.manifest.parse_failed", ПутьКФайлу);
 
 КонецПроцедуры
 
 &ПараметризованныйТест
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-incorrect-root.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-depends-on-without-name.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-incorrect-elements.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-depends-on-empty.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-with-text.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-with-cdata.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-with-text-before-dependency.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-depends-on-with-child.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-depends-on-with-text.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 &ИсточникЗначение(
 	"./tests/fixtures/opm-metadata-depends-on-with-cdata.xml",
-	"manifest.structure_invalid"
+	"depos.manifest.structure_invalid"
 )
 Процедура ТестДолжен_ВернутьСтруктурированнуюОшибкуПриНекорректнойСтруктуре(
 	ПутьКФайлу,
@@ -263,7 +263,7 @@
 	Ошибка = ПолучитьОшибкуРазбора(ПутьКФайлу);
 
 	// Проверка
-	ПроверитьОшибкуМанифеста(Ошибка, "dependency.version_invalid", ПутьКФайлу, ИмяПакета);
+	ПроверитьОшибкуМанифеста(Ошибка, "depos.dependency.version_invalid", ПутьКФайлу, ИмяПакета);
 
 КонецПроцедуры
 
