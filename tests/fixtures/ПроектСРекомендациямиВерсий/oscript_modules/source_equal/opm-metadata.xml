@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+	<name>source_equal</name>
+	<version>1.0.0</version>
+	<depends-on name="candidate" dev="false" version="5.4.0.3"/>
+</opm-metadata>

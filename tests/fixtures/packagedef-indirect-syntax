@@ -1,0 +1,29 @@
+Описание.Имя("indirect-syntax")
+	.Версия("1.0.0")
+	.ЗависитОт("exact", "1.0.0"); // transitive
+Описание.ЗависитОт("spaced", "1.0.0"); //   transitive
+Описание.ЗависитОт("russian", "1.0.0"); // транзитивная
+Описание.РазработкаЗависитОт("russian_dev", "1.0.0"); //   транзитивная
+
+Описание.ЗависитОт("mentioned", "1.0.0"); // indirect because transitive
+Описание.ЗависитОт("word", "1.0.0"); // indirectly
+Описание.ЗависитОт("without_space", "1.0.0"); //indirect
+Описание.ЗависитОт("russian_suffix", "1.0.0"); // транзитивная причина
+Описание.ЗависитОт("russian_case", "1.0.0"); // ТрАнЗиТиВнАя
+Описание.ЗависитОт("case", "1.0.0"); // TrAnSiTiVe
+Описание.ЗависитОт("implicit", "1.0.0"); // implicit
+Описание.ЗависитОт("implicit_russian", "1.0.0"); // неявная
+Описание.РазработкаЗависитОт("implicit_dev", "1.0.0"); // НеЯвНаЯ
+Описание.ЗависитОт("implicit_case", "1.0.0"); // ImPlIcIt
+Описание.ЗависитОт("implicit_reason", "1.0.0"); // implicit - loaded dynamically
+Описание.ЗависитОт("implicit_russian_reason", "1.0.0"); // Неявная - используется через API
+Описание.ЗависитОт("transitive_reason", "1.0.0"); // transitive - required by source
+Описание.ЗависитОт("transitive_russian_reason", "1.0.0"); // Транзитивная - нужна для сборки
+Описание.ЗависитОт("legacy", "1.0.0"); // indirect
+Описание.ЗависитОт("implicit_suffix", "1.0.0"); // implicit reason
+Описание.ЗависитОт("implicit_without_space", "1.0.0"); //implicit
+Описание.ЗависитОт("transitive_suffix", "1.0.0"); // transitive reason
+Описание.ЗависитОт("empty_reason", "1.0.0"); // implicit -
+Описание.ЗависитОт("separate", "1.0.0");
+// indirect
+Описание.РазработкаЗависитОт("dev_exact", "1.0.0"); // transitive

@@ -1,0 +1,4 @@
+Описание.Имя("indirect-deep")
+	.Версия("1.0.0")
+	.ЗависитОт("deep_root", "1.0.0")
+	.ЗависитОт("deep_candidate", "2.0.0"); // transitive
