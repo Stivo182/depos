@@ -14,3 +14,4 @@ jobs:
         uses: Stivo182/depos-action@v2
         with:
           token: ${{ secrets.PUSH_TOKEN }}
+          engine: auto
