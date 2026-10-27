@@ -32,10 +32,8 @@
 Версия OneScript 1.9.3 поддерживалась до depos 0.4.0 включительно.
 
 ```bsl
-opm install depos
+opm install -s depos
 ```
-
-Если приложение будет использоваться как CLI, установите его с флагом `-s`, `--skip-install-deps`.
 
 ## Быстрый старт <a name="quick-start"></a>
 
