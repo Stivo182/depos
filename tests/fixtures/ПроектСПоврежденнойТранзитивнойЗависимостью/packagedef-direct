@@ -1,0 +1,5 @@
+Описание.Имя("damaged-direct-and-transitive-dependency")
+	.Версия("1.0.0")
+	.ЗависитОт("root", "1.0.0")
+	.ЗависитОт("broken-leaf", "1.0.0")
+;
